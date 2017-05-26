@@ -18,6 +18,6 @@ RUN set -x && \
 ENV AWS_DEFAULT_REGION=us-east-1 \
     AWS_DEFAULT_OUTPUT=json
 
-ADD https://raw.githubusercontent.com/porcaro33/openfoam-docker/master/openfoam_run.sh /root
+ADD https://raw.githubusercontent.com/zuuzlo/openFoamDockerECS/master/openfoam_run.sh /root
 RUN sudo chmod +x /root/openfoam_run.sh
 CMD ["/root/openfoam_run.sh"]

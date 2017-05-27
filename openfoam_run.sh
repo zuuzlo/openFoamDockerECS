@@ -18,7 +18,7 @@ cd $FOAM_RUN
 aws s3 cp s3://$BUCKETNAME/case . --recursive
 
 chmod +x Allrun
-
+echo "Allrun going to run"
 Allrun
 
 #cp -r $FOAM_TUTORIALS/incompressible/simpleFoam/pitzDaily .
